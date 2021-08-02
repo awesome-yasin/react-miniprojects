@@ -1,0 +1,114 @@
+.calculator-body {
+    width: 620px;
+    margin: 4% auto;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    background-color: #e9ecef;
+  }
+  
+
+.calculator {
+    padding: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    background-color: white;
+  }
+  
+
+  .input {
+    border: 2px solid #ddd;
+    border-radius: 1px;
+    width: 70% !important;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-left: 20px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .input:hover {
+    border: 2px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .operators button {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 105px;
+    text-align: center;
+    padding: 10px;
+  
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .operators div:hover {
+    background-color: #ddd;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+  }
+  
+  .operators div:active {
+    font-weight: bold;
+  }
+  
+  .leftPanel {
+    display: inline-block;
+  }
+  
+  .numbers div {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .numbers div:hover {
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+  }
+  
+  .numbers div:active {
+    font-weight: bold;
+  }
+  
+  div.equal {
+    display: inline-block;
+    border: 1px solid #3079ed;
+    border-radius: 1px;
+    width: 10%;
+    text-align: center;
+    padding: 127px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4d90fe;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  div.equal:hover {
+    background-color: #307cf9;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857bb;
+  }
+  
+  div.equal:active {
+    font-weight: bold;
+  }

@@ -1,0 +1,24 @@
+input[type=number] {
+    width: 50%;
+    
+    padding: 12px 20px;
+    margin: 68px 190px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-right: 30px;
+  }
+  
+  input[type=number]:focus {
+    border: 3px solid #555;
+  }
+
+
+select {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid rgb(221, 146, 146);
+    outline: none;
+  }

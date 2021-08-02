@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+ body {
+	 margin: 0;
+	 background: #37ecba;
+	
+}
+ 
+ input, .buttonzz, span {
+	 font-family: 'Roboto', cursive;
+}
+ input, .buttonzz {
+	 outline: none;
+}
+ .buttonzz {
+	 cursor: pointer;
+}
+ .todo {
+	margin: 0 auto;
+  min-width: 500px;
+  max-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ .todo > .todo-form {
+	 background-color: #0097a7;
+	 display: flex;
+	 justify-content: space-between;
+	 padding: 15px;
+}
+ .todo > .todo-form > input {
+	 font-size: 25px;
+	 font-weight: bold;
+	 font-style: italic;
+	 width: calc(100% - 80px);
+	 color: white;
+	 background: none;
+	 border: none;
+}
+ .todo > .todo-form > input::placeholder {
+	 color: white;
+}
+ .todo > .todo-form > .buttonzz {
+	 padding: 5px 10px;
+	 font-size: 20px;
+	 background-color: #00bcd4;
+	 border: none;
+	 color: white;
+}
+ .todo > span {
+	 padding: 15px;
+	 background-color: red;
+	 color: white;
+	 display: block;
+	 text-align: center;
+}
+ .todo > ul {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+ .todo > ul > li {
+	 padding: 15px;
+	 line-height: 25px;
+	 position: relative;
+	 cursor: pointer;
+	 background-color: white;
+}
+ .todo > ul > li .buttonzz {
+	 font-size: 20px;
+	 float: right;
+	 border: none;
+	 background: none;
+}
+ .todo > ul > li:hover span {
+	 background-color: #eee;
+}
+ .todo > ul > li > input[type="text"] {
+	 background: none;
+	 border: none;
+	 margin-left: 30px;
+	 width: calc(100% - 100px);
+}
+ .todo > ul > li > input[type="checkbox"] {
+	 position: absolute;
+	 opacity: 0;
+	 cursor: pointer;
+	 height: 0;
+	 width: 0;
+}
+ .todo > ul > li > input[type="checkbox"]:checked ~ span {
+	 background-color: #00bcd4;
+}
+ .todo > ul > li > input[type="checkbox"]:checked ~ span::after {
+	 display: block;
+}
+ .todo > ul > li > span {
+	 position: absolute;
+	 top: 30px;
+	 left: 15px;
+	 height: 25px;
+	 width: 25px;
+	 background-color: #eee;
+}
+ .todo > ul > li > span::after {
+	 content: "";
+	 position: absolute;
+	 display: none;
+	 left: 9px;
+	 top: 5px;
+	 width: 5px;
+	 height: 10px;
+	 border: solid white;
+	 border-width: 0 3px 3px 0;
+	 transform: rotate(45deg);
+	 
+}
+ 
